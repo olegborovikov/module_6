@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const word = prompt('Введите слово для проверки на палиндром:')
+
+      if (word !== null) {
+        const lowered = word.toLowerCase()
+        const reversed = lowered.split('').reverse().join('')
+
+        if (lowered === reversed) {
+          alert(`Слово "${word}" является палиндромом`)
+        } else {
+          alert(`Слово "${word}" не является палиндромом`)
+        }
+      } else {
+        alert('Вы ничего не ввели.')
+      }
+      console.log(word)
+    </script>
+  </body>
+</html>
